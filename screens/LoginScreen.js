@@ -12,7 +12,7 @@ export class LoginScreen extends React.Component {
                 </View> 
                 <View style={styles.formContainer}>
                     <TouchableOpacity style={styles.buttonContainer}>
-                        <Text>SIGN IN </Text>
+                        <Text style={styles.buttonText}>SIGN IN </Text>
                     </TouchableOpacity>
                 </View>
 
