@@ -18,7 +18,7 @@ export class LoginScreen extends React.Component {
                     <TextInput placeholder="username" placeholderTextColor="#FFF" style={styles.inputContainer}/>
                     <TextInput placeholder="password" secureTextEntry={true} placeholderTextColor="#FFF" style={styles.inputContainer}/>                    
                     <MaterialButton buttonText="SIGN IN" />
-                    <MaterialButton buttonText="LOGIN WITH FACEBOOK"/>                    
+                    <MaterialButton buttonStyles={{borderRadius:50}} buttonText="LOGIN WITH FACEBOOK"/>                    
                 </View>
 
             </View>
