@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
 import styles from "./LoginScreen.styles";
+import { MaterialButton } from "../components/MaterialButton/MaterialButton";
 
 export class LoginScreen extends React.Component {
     render() {
@@ -11,11 +12,13 @@ export class LoginScreen extends React.Component {
                     <Text style={styles.headerText}>Your next job is only a Swipe away</Text>
                 </View> 
                 <View style={styles.formContainer}>
-                    <TextInput placeholder="username" placeholderTextColor="#FFF" style={styles.inputContainer}/>
-                    <TextInput placeholder="password" secureTextEntry={true} placeholderTextColor="#FFF" style={styles.inputContainer}/>                    
-                    <TouchableOpacity style={styles.buttonContainer}>
+                    <TouchableOpacity style={[styles.buttonContainer, { borderRadius: 50 }]}>
                         <Text style={styles.buttonText}>SIGN IN </Text>
                     </TouchableOpacity>
+                    <TextInput placeholder="username" placeholderTextColor="#FFF" style={styles.inputContainer}/>
+                    <TextInput placeholder="password" secureTextEntry={true} placeholderTextColor="#FFF" style={styles.inputContainer}/>                    
+                    <MaterialButton buttonText="SIGN IN" />
+                    <MaterialButton buttonText="LOGIN WITH FACEBOOK"/>                    
                 </View>
 
             </View>

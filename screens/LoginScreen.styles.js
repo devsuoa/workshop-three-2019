@@ -17,6 +17,7 @@ export default StyleSheet.create({
     },
     formContainer: {
         flex: 3,
+        justifyContent: "center"
     },
     imageStyle: {
         width: 150,
@@ -37,6 +38,7 @@ export default StyleSheet.create({
         height: 60,
         color: "#FFF",
         padding: 10,
-        backgroundColor: "rgba(255, 255,255, 0.2)"
+        backgroundColor: "rgba(255, 255,255, 0.2)",
+        marginBottom: 20
     }
 })
