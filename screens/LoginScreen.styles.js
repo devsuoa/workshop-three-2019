@@ -8,10 +8,12 @@ export default StyleSheet.create({
     },
     headerContainer: {
         flex: 2,
-        backgroundColor: "black"
     },
     formContainer: {
         flex: 3,
-        backgroundColor: "white"
+    },
+    imageStyle: {
+        width: 150,
+        height: 150
     }
 })
