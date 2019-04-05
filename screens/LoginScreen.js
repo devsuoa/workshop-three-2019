@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import styles from "./LoginScreen.styles";
 
 export class LoginScreen extends React.Component {
@@ -8,13 +8,15 @@ export class LoginScreen extends React.Component {
             <View style={styles.loginContainer}>
                 <View style={styles.headerContainer}>
                     <Image style={styles.imageStyle} source={require("../assets/logo.png")}/>
+                    <Text style={styles.headerText}>Your next job is only a Swipe away</Text>
                 </View> 
                 <View style={styles.formContainer}>
-                    <Text>Hello from the form area </Text>
+                    <TouchableOpacity style={styles.buttonContainer}>
+                        <Text>SIGN IN </Text>
+                    </TouchableOpacity>
                 </View>
 
             </View>
         )
     }
 }
-// 1/ (1 + 1) = 50%

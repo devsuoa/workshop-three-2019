@@ -8,6 +8,12 @@ export default StyleSheet.create({
     },
     headerContainer: {
         flex: 2,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    headerText: {
+        color: "#FFF",
+        marginTop: 20
     },
     formContainer: {
         flex: 3,
@@ -15,5 +21,9 @@ export default StyleSheet.create({
     imageStyle: {
         width: 150,
         height: 150
+    },
+    buttonContainer: {
+        height: 60,
+        backgroundColor: "#FFF"
     }
 })
