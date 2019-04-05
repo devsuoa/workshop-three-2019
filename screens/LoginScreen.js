@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
 import styles from "./LoginScreen.styles";
 
 export class LoginScreen extends React.Component {
@@ -11,6 +11,8 @@ export class LoginScreen extends React.Component {
                     <Text style={styles.headerText}>Your next job is only a Swipe away</Text>
                 </View> 
                 <View style={styles.formContainer}>
+                    <TextInput placeholder="username" placeholderTextColor="#FFF" style={styles.inputContainer}/>
+                    <TextInput placeholder="password" secureTextEntry={true} placeholderTextColor="#FFF" style={styles.inputContainer}/>                    
                     <TouchableOpacity style={styles.buttonContainer}>
                         <Text style={styles.buttonText}>SIGN IN </Text>
                     </TouchableOpacity>

@@ -32,5 +32,11 @@ export default StyleSheet.create({
     buttonText: {
         color: "#FFF",
         fontWeight: "700"
+    },
+    inputContainer: {
+        height: 60,
+        color: "#FFF",
+        padding: 10,
+        backgroundColor: "rgba(255, 255,255, 0.2)"
     }
 })
