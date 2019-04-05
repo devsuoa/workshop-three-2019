@@ -6,10 +6,10 @@ export class LoginScreen extends React.Component {
     render() {
         return (
             <View style={styles.loginContainer}>
-                <View>
+                <View style={styles.headerContainer}>
                     <Text>Hello from the header area </Text>
                 </View> 
-                <View>
+                <View style={styles.formContainer}>
                     <Text>Hello from the form area </Text>
                 </View>
 
