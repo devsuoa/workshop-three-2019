@@ -5,7 +5,7 @@ import styles from "./MaterialButton.styles";
 export class MaterialButton extends React.Component {
     render() {
         return (
-            <TouchableOpacity style={styles.buttonContainer}>
+            <TouchableOpacity style={[this.props.buttonStyles, styles.buttonContainer]}>
                 <Text style={styles.buttonText}>{this.props.buttonText}</Text>
             </TouchableOpacity>
         );
