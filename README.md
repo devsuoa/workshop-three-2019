@@ -1,4 +1,4 @@
-# Welcome to Workshop Two!
+# Welcome to Workshop Three!
 
 
 # Pre-requisites 
