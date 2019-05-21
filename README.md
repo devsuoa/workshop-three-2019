@@ -3,11 +3,13 @@
 
 # Pre-requisites 
 
-Hi all, we've added a few things to this repository (since last workshop) to make the workshop this Friday run a bit smoother.
+Hi all,
+
+This workshop continues where we left off since workshop two. We've also added a few things to this repository to make the session run a bit smoother.
 
 You may notice theres a few extra package dependencies, screens and a new component that we have added.
 
-To make sure everything is set up and ready to go for Friday, please follow these steps:
+To make sure everything is set up and ready to go for Friday, please follow these steps (regardless of whether you attended last time or not):
 * Clone this repository using `git clone https://github.com/devsuoa/workshop-three.git`
 * `cd` into the 'workshop-three' folder 
 * Run `yarn` or `npm install` depending on what package manager you are using 
