@@ -3,7 +3,16 @@
 
 # Pre-requisites 
 
-The pre-requistes for this workshop can be found here: https://github.com/devsuoa/workshop-one
+Hi all, we've added a few things to this repository (since last workshop) to make the workshop this Friday run a bit smoother.
+
+You may notice theres a few extra package dependencies, screens and a new component that we have added.
+
+To make sure everything is set up and ready to go for Friday, please follow these steps:
+* Clone this repository using `git clone https://github.com/devsuoa/workshop-three.git`
+* `cd` into the 'workshop-three' folder 
+* Run `yarn` or `npm install` depending on what package manager you are using 
+* Run `expo start` 
+* Make sure the app is working correctly on your phone ! 
 
 ## Workshop Two Recording
 
