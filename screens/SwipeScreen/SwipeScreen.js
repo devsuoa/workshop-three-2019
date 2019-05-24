@@ -42,10 +42,11 @@ export class SwipeScreen extends React.Component {
                 <AppContext.Consumer>
                     {
                         ({jobs}) => {
-                            return <Swiper
+                            return ( <Swiper
                              renderCard={this.renderCard}
                              data = {jobs}
                              />
+                            )
                         }
                     }
                 </AppContext.Consumer>
