@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { MapView } from "expo";
 
 export class MapScreen extends React.Component {
     render() {
         return (
-            <View>
-                <Text>Hello from the map screen</Text>
+            <View style={{flex: 1}}>
+                <MapView style={{flex: 1}}/>
             </View>
         )
     }

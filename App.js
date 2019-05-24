@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { LoginScreen } from "./screens/LoginScreen/LoginScreen";
-import { createBottomTabNavigator, createAppContainer } from "react-navigation";
+import { createBottomTabNavigator, createSwitchNavigator, createAppContainer } from "react-navigation";
 import { MapScreen } from "./screens/MapScreen/MapScreen";
 import { ReviewScreen } from "./screens/ReviewScreen/ReviewScreen";
 import { SwipeScreen } from "./screens/SwipeScreen/SwipeScreen"
+
+
 
 const TabNavigator = createBottomTabNavigator({
   map: MapScreen,
@@ -12,7 +14,14 @@ const TabNavigator = createBottomTabNavigator({
   swipe: SwipeScreen
 })
 
-const AppContainer = createAppContainer(TabNavigator);
+const SwitchNavigator = createSwitchNavigator({
+  login: LoginScreen,
+  main: TabNavigator
+}, {
+  initialRouteName: "main"
+})
+
+const AppContainer = createAppContainer(SwitchNavigator);
 
 
 

@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, TextInput, KeyboardAvoidingView } from "react-native";
 import styles from "./LoginScreen.styles";
 import { MaterialButton } from "../../components/MaterialButton/MaterialButton";
+import { Button } from "react-native-elements";
 
 export class LoginScreen extends React.Component {
     render() {
