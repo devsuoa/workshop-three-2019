@@ -26,8 +26,16 @@ export class MapScreen extends React.Component {
     }
 
     fetchJobs = async () => {
-        const response = await axios.get("https://jobs.github.com/positions.json?lat=37.3229978&long=-122.0321823")
-        console.log(response.data);
+        const latitude = this.state.region.latitude;
+        const longitude = this.state.region.longitude;
+
+        try {
+            const response = await axios.get(`https://jobs.github.com/positions.json?lat=${latitude}&long=${longitude}`)
+            const jobs = response.data.slice(0, 10);
+            return jobs;
+        } catch (err) {
+            console.log(err);
+        }
     }
 
 

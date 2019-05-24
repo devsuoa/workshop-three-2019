@@ -5,6 +5,7 @@ import { createBottomTabNavigator, createSwitchNavigator, createAppContainer } f
 import { MapScreen } from "./screens/MapScreen/MapScreen";
 import { ReviewScreen } from "./screens/ReviewScreen/ReviewScreen";
 import { SwipeScreen } from "./screens/SwipeScreen/SwipeScreen"
+import { AppProvider } from './AppProvider';
 
 
 
@@ -28,7 +29,9 @@ const AppContainer = createAppContainer(SwitchNavigator);
 export default class App extends React.Component {
   render() {
     return (
-      <AppContainer />
+      <AppProvider>
+        <AppContainer />
+      </AppProvider>
     );
   }
 }
