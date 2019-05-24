@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { MapView } from "expo";
 import { Button } from "react-native-elements";
 import axios from "axios";
+import { AppContext } from "../../AppProvider";
 
 const initialRegion = {
     longitude: -122,
@@ -43,7 +44,19 @@ export class MapScreen extends React.Component {
         return (
             <View style={{flex: 1}}>
                 <MapView region={this.state.region} style={{flex: 1}} onRegionChangeComplete={this.onRegionChangeComplete}/>
-                <Button title="Fetch Jobs!" onPress={this.fetchJobs} />
+                <AppContext.Consumer>
+                    {
+                        ({updateJobs}) => {
+                            return  <Button title="Fetch Jobs!" onPress={async () => {
+                                const jobs = await this.fetchJobs();
+                                updateJobs(jobs);
+                                this.props.navigation.navigate("swipe");
+                                }
+                            } />
+                        }
+                    }
+                </AppContext.Consumer>
+
             </View>
         )
     }
